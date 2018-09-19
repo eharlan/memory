@@ -1,4 +1,3 @@
-
 var webpack = require("webpack");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractPlugin = new ExtractTextPlugin({
