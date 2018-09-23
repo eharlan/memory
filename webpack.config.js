@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractPlugin = new ExtractTextPlugin({
-    filename: './style.css'
+    filename: './css/style.css'
 });
 module.exports = {
     entry: "./index.js",
@@ -40,12 +40,9 @@ module.exports = {
                 }
             }]
         }, {
-            test: /\.scss$/,
-            exclude: /node_modules/,
-            use: extractPlugin.extract({
-                use: ["css-loader", "sass-loader", "postcss-loader"],
-                fallback: 'style-loader'
-            })
+          test: /\.css$/,
+          exclude: /node_modules/,
+          use: ['style-loader', 'css-loader'],
         }, {
             test: /\.js$/,
             exclude: /node_modules/,

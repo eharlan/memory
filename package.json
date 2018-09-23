@@ -1,5 +1,5 @@
 {
-  "name": "react-tutorial",
+  "name": "react-memory-game",
   "version": "1.0.0",
   "description": "Working with React Redux and Webpack",
   "main": "index.js",
@@ -13,8 +13,9 @@
   "author": "Erik Harlan",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.1.5",
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "7.0.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -39,6 +40,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-flippy": "^0.1.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0"
   }

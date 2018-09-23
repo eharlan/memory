@@ -1,7 +1,7 @@
 var webpack = require("webpack");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractPlugin = new ExtractTextPlugin({
-    filename: './style.css'
+    filename: './css/style.css'
 });
 module.exports = require('./webpack.config.js');
 delete module.exports.devtool;
