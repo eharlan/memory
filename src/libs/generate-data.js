@@ -1,4 +1,5 @@
 import faker from 'faker';
+import random from './random';
 
 const cards = [];
 
@@ -10,8 +11,9 @@ getDescription: function(){
 return faker.image.nature(150,150,true);
 },
 items: function(min, max){
- return Math.round(Math.random() * (max-min) + min);
+ return random(min, max);
 },
+
 height: 250
 
 }
